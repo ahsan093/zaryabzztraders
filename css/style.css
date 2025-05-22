@@ -93,7 +93,6 @@
     background: #FFD700;
 }
 
-
 /*** Topbar Start ***/
 .topbar .dropdown-toggle::after {
     border: none;
@@ -185,7 +184,47 @@
     opacity: 1;
 }
 
+@media (max-width: 767.98px) {
+    .navbar .nav-item:hover .dropdown-menu {
+        position: static;
+        margin-left: 15px;
+    }
+
+    .footer-item {
+        margin-bottom: 30px;
+    }
+
+    .footer-item img {
+        max-width: 150px;
+    }
+
+    .footer .border-start {
+        border: none !important;
+    }
+
+    .about .d-flex {
+        flex-direction: column;
+    }
+
+    .about .d-flex i {
+        margin-bottom: 1rem;
+    }
+
+    .testimonial-item {
+        text-align: center;
+    }
+
+    .testimonial-item img {
+        margin: 0 auto 1rem;
+    }
+
+    .blog-carousel .owl-nav {
+        display: none;
+    }
+}
+
 @media (max-width: 991.98px) {
+    /* Navbar Styles */
     .sticky-top.navbar-light {
         position: relative;
         background: #FFFFFF;
@@ -195,12 +234,157 @@
         padding: 10px 20px;
         border: 1px solid #FFD700;
         color: #FFD700;
+        margin-right: 15px;
     }
 
     .navbar-light .navbar-collapse {
         margin-top: 15px;
-        border-top: 1px solid #DDDDDD;
+        background: #FFFFFF;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
+
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #000000;
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 50px;
+    }
+
+    .topbar {
+        display: none;
+    }
+
+    /* Header Carousel Styles */
+    .header-carousel .carousel-caption {
+        padding: 20px;
+        text-align: center !important;
+    }
+
+    .header-carousel .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+    .header-carousel .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .header-carousel .carousel-caption .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    /* Services Section */
+    .service-item {
+        margin-bottom: 30px;
+    }
+
+    .service-item .service-img img {
+        height: auto;
+    }
+
+    /* Features Section */
+    .feature-item {
+        margin-bottom: 30px;
+    }
+
+    /* Pricing Section */
+    .single_price_plan {
+        margin-bottom: 30px;
+    }
+
+    /* About Section */
+    .about .about-img {
+        margin-bottom: 30px;
+    }
+
+    /* Team Section */
+    .team-item {
+        margin-bottom: 30px;
+    }
+
+    /* Blog Section */
+    .blog-item {
+        margin-bottom: 30px;
+    }
+
+    /* General Text Styles */
+    .display-5 {
+        font-size: 32px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    /* Spacing */
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* Additional Mobile Styles */
+@media (max-width: 575.98px) {
+    .header-carousel .carousel-caption h1 {
+        font-size: 24px;
+    }
+
+    .header-carousel .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .header-carousel .carousel-caption .btn {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .display-5 {
+        font-size: 28px;
+    }
+
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .service-item,
+    .feature-item,
+    .team-item,
+    .blog-item {
+        margin-bottom: 20px;
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 40px;
+    }
+
+    .btn-md-square,
+    .btn-lg-square {
+        width: 36px;
+        height: 36px;
+    }
+
+    .social-links a {
+        margin: 0 5px;
+    }
+}
+
 
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
